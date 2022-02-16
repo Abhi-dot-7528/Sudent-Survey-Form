@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Survey Form</title>
+  </head>
+  <body>
+    <form action="submit.html" method="get">
+      <h1>STUDENT SURVEY FORM</h1>
+      <div class="name">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="age">
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" min="10" max="100" />
+      </div>
+      <br />
+      <br />
+      <label for="hobbies">What are your hobbies?</label>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <br />
+      
+      <p>
+        Do you exercise? <input type="radio" name="exercise" value="1" />Yes
+        <input type="radio" name="exercise" value="2" />No
+      </p>
+      <p>
+        Do you like to read? <input type="radio" name="read" value="1" />Yes
+        <input type="radio" name="read" value="2" />No
+      </p>
+      <p>What are your favourite subjects?</p>
+      <input type="checkbox" name="Maths" />Maths
+      <input type="checkbox" name="Physics" />Physics
+      <input type="checkbox" name="Chemistry" />Chemistry
+      <input type="checkbox" name="Biology" />Biology
+      <input type="checkbox" name="History" />History
+      <input type="checkbox" name="Giography" />Geography
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
